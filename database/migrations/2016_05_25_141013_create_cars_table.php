@@ -18,6 +18,7 @@ class CreateCarsTable extends Migration
             $table->string('car_name');
             $table->string('model');
             $table->string('make');
+            $table->integer('active')->defaul(0);
             $table->timestamps();
         });
     }
