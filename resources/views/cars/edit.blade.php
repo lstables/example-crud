@@ -5,38 +5,38 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Editing {!! $car->car_name !!}</div>
+                    <div class="panel-heading">Editing "{!! $car->car_name !!}"</div>
 
                     <div class="panel-body">
-                        {!! Form::open(['url' => '/admin/cars/', 'class' => 'form-horizontal']) !!}
+                        {!! Form::open(['url' => '/admin/cars/' . $car->id, 'class' => 'form-horizontal']) !!}
 
                         <input type="hidden" name="_method" value="PUT">
 
                         <div class="form-group">
                             <div class="col-sm-3">Car Name</div>
                             <div class="col-lg-7">
-                                <input type="text" name="car_name" class="form-control" value="" autocomplete="off">
+                                <input type="text" name="car_name" class="form-control" value="{!! $car->car_name !!}" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-3">Type</div>
                             <div class="col-lg-7">
-                                <input type="text" name="type" class="form-control" value="" autocomplete="off">
+                                <input type="text" name="type" class="form-control" value="{!! $car->type !!}" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-3">Model</div>
                             <div class="col-lg-7">
-                                <input type="text" name="model" class="form-control" value="" autocomplete="off">
+                                <input type="text" name="model" class="form-control" value="{!! $car->model !!}" autocomplete="off">
                             </div>
                         </div>
 
                         <div class="form-group">
                             <div class="col-sm-3">Make</div>
                             <div class="col-lg-7">
-                                <input type="text" name="make" class="form-control" value="" autocomplete="off">
+                                <input type="text" name="make" class="form-control" value="{!! $car->make !!}" autocomplete="off">
                             </div>
                         </div>
 

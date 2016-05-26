@@ -18,6 +18,8 @@ Route::get('/', function () {
 Route::auth();
 
 Route::group(['prefix' => 'admin'], function () {
+
     Route::get('/home', 'HomeController@index');
+
     Route::resource('cars', 'CarsController');
 });

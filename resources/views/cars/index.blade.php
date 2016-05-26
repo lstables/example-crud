@@ -32,7 +32,7 @@
                                         <td>{!! $car->make !!}</td>
                                         <td>{!! $car->model !!}</td>
                                         <td>
-                                            <a href="/admin/cars/edit/{!! $car->id !!}" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                                            <a href="/admin/cars/{!! $car->id !!}/edit" class="btn btn-warning"><i class="fa fa-edit"></i></a>
                                         </td>
                                         <td>
                                             {!! Form::open(['url' => '/admin/cars/' . $car->id]) !!}
