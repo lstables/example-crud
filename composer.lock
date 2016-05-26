@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "eacaf71fe4508316fba621d4cec6f524",
-    "content-hash": "d3124744e0d647d83d3bb82d13ba8069",
+    "hash": "5cffedd9f43174c3b340ce24768ae2b8",
+    "content-hash": "1dc104ddb729af77c6553b178a5afb17",
     "packages": [
         {
             "name": "classpreloader/classpreloader",
@@ -162,6 +162,45 @@
             "time": "2015-11-06 14:35:42"
         },
         {
+            "name": "infinety/alerts",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Infinety/alerts.git",
+                "reference": "c975d7dab575d9f4b4c2a0046606e1301d6cacf1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Infinety/alerts/zipball/c975d7dab575d9f4b4c2a0046606e1301d6cacf1",
+                "reference": "c975d7dab575d9f4b4c2a0046606e1301d6cacf1",
+                "shasum": ""
+            },
+            "type": "package",
+            "autoload": {
+                "psr-4": {
+                    "Infinety\\Alerts\\": "/src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Infinety",
+                    "email": "create@infinety.co.uk"
+                }
+            ],
+            "description": "A Sweet Alert package for Laravel 5>",
+            "keywords": [
+                "alert",
+                "laravel",
+                "laravel sweet alert",
+                "sweet-alert"
+            ],
+            "time": "2016-03-09 20:40:48"
+        },
+        {
             "name": "jakub-onderka/php-console-color",
             "version": "0.1",
             "source": {
@@ -308,16 +347,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.2.32",
+            "version": "v5.2.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "f688217113f70b01d0e127da9035195415812bef"
+                "reference": "4120808d2e841ba5a94c5e0443e9696ae4fa9bfe"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/f688217113f70b01d0e127da9035195415812bef",
-                "reference": "f688217113f70b01d0e127da9035195415812bef",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/4120808d2e841ba5a94c5e0443e9696ae4fa9bfe",
+                "reference": "4120808d2e841ba5a94c5e0443e9696ae4fa9bfe",
                 "shasum": ""
             },
             "require": {
@@ -433,7 +472,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-05-17 13:24:40"
+            "time": "2016-05-25 18:35:42"
         },
         {
             "name": "laravelcollective/html",
@@ -3060,7 +3099,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "infinety/alerts": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {

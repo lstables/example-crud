@@ -5,7 +5,12 @@
         <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Cars</div>
+                    <div class="panel-heading">
+                        Cars
+                        <div class="pull-right">
+                            <a href="/admin/cars/create" class="btn btn-sm btn-primary">Create New</a>
+                        </div>
+                    </div>
 
                     <div class="panel-body">
                         <div class="table-responsive">
