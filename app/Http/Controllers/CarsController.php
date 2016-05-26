@@ -31,7 +31,7 @@ class CarsController extends Controller
     public function index()
     {
         // Shows all cars and paginated by 5 results per page.
-        $cars = Cars::paginate(5);
+        $cars = Cars::where('active', '=', 1)->latest()->paginate(5);
         return view('cars.index', compact('cars'));
     }
 

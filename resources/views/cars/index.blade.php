@@ -20,6 +20,7 @@
                                         <th>Car Name</th>
                                         <th>Make</th>
                                         <th>Model</th>
+                                        <th>Active</th>
                                         <th></th>
                                         <th></th>
                                     </tr>
@@ -31,6 +32,9 @@
                                         <td>{!! $car->car_name !!}</td>
                                         <td>{!! $car->make !!}</td>
                                         <td>{!! $car->model !!}</td>
+                                        <td>
+                                            <span class="label label-success">Yes</span>
+                                        </td>
                                         <td>
                                             <a href="/admin/cars/{!! $car->id !!}/edit" class="btn btn-warning"><i class="fa fa-edit"></i></a>
                                         </td>
